@@ -33,7 +33,7 @@
             <a class="nav__link" href="#section--3">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            <a class="nav__link nav__link--btn btn--show-modal" onclick="openModal()" href="#"
               >Open account</a
             >
           </li>
@@ -49,7 +49,7 @@
           <span class="highlight">minimalist</span>
         </h1>
         <h4>A simpler banking experience for a simpler life.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <button class="btn--text btn--scroll-to" onclick="scrollToFun()">Learn more &DownArrow;</button>
         <img
           src="img/hero.png"
           class="header__img"
@@ -138,7 +138,7 @@
       </div>
 
       <div class="operations">
-        <div class="operations__tab-container">
+        <div class="operations__tab-container" onclick="tabsContainerfun()">
           <button
             class="btn operations__tab operations__tab--1 "
             data-tab="1"
@@ -279,8 +279,8 @@
         <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
         <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
         <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <button class="slider__btn slider__btn--left" onclick="prevSlide()">&larr;</button>
+        <button class="slider__btn slider__btn--right" onclick="nextSlide()">&rarr;</button>
         <div class="dots"></div>
       </div>
     </section>
@@ -292,7 +292,7 @@
           today!
         </h3>
       </div>
-      <button class="btn btn--show-modal">Open your free account today!</button>
+      <button class="btn btn--show-modal" onclick="openModal()" >Open your free account today!</button>
     </section>
 
     <footer class="footer">
@@ -333,7 +333,7 @@
     </footer>
 
     <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
+      <button class="btn--close-modal" onclick="closeModal()">&times;</button>
       <h2 class="modal__header">
         Open your bank account <br />
         in just <span class="highlight">5 minutes</span>
@@ -348,7 +348,7 @@
         <button class="btn">Next step &rarr;</button>
       </form>
     </div>
-    <div class="overlay hidden"></div>
+    <div class="overlay hidden" onclick="closeModal()"></div>
 
     <script src="script.js"></script>
   </body>
